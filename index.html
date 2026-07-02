@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Harshada Desale — Web Developer & AI/ML Enthusiast. MCA student skilled in Python, Machine Learning, NLP, and Web Development.">
+    <meta property="og:title" content="Harshada Desale | Portfolio">
+    <meta property="og:description" content="Web Developer & AI/ML Enthusiast — explore my projects, skills, and education.">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%231e3a8a'/%3E%3Ctext x='50' y='68' font-size='55' font-family='Arial' font-weight='bold' fill='white' text-anchor='middle'%3EH%3C/text%3E%3C/svg%3E">
+    <title>Harshada Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dark-mode">
+    <div class="progress-bar" id="progressBar"></div>
+
+    <header>
+        <nav>
+            <h1>Harshada Desale</h1>
+            <ul id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="theme-toggle">
+                <button id="theme-btn" aria-label="Toggle theme">
+                    <svg id="iconMoon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="display:none"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                    <svg id="iconSun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.2M12 19.8V22M4.2 4.2l1.6 1.6M18.2 18.2l1.6 1.6M2 12h2.2M19.8 12H22M4.2 19.8l1.6-1.6M18.2 5.8l1.6-1.6"/></svg>
+                </button>
+                <button id="menu-btn">☰</button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content reveal reveal-left">
+            <h1>Hi, I'm <span>Harshada Desale</span></h1>
+            <h2><span id="typingText"></span><span class="cursor">|</span></h2>
+            <p>
+                MCA student with a strong foundation in Python, Machine Learning,
+                NLP, and Web Development. I enjoy building responsive websites and
+                AI-driven solutions to real-world problems.
+            </p>
+            <a href="resume.pdf" download class="btn">Download Resume</a>
+            <a href="#projects" class="btn btn-outline">View Projects</a>
+        </div>
+
+        <div class="hero-image reveal reveal-right">
+            <img src="images/profile.jpg" alt="Harshada Desale">
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2 class="reveal reveal-up">About Me</h2>
+        <p class="reveal reveal-up">
+            I am Harshada Desale, a Master of Computer Applications graduate with a
+            strong foundation in Python programming, Machine Learning, Natural
+            Language Processing, and Web Development. I have hands-on experience
+            building an emotion-aware depression detection system using BERT, Flask,
+            and SHAP for explainable AI. I enjoy creating responsive, user-friendly
+            websites, building machine learning models, and working with REST APIs —
+            and I'm always eager to learn new technologies and solve real-world
+            problems through AI-driven solutions.
+        </p>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2 class="reveal reveal-up">My Skills</h2>
+        <div class="skill-box">
+            <div class="card reveal reveal-up"><h3>Python</h3></div>
+            <div class="card reveal reveal-up"><h3>HTML</h3></div>
+            <div class="card reveal reveal-up"><h3>CSS</h3></div>
+            <div class="card reveal reveal-up"><h3>JavaScript</h3></div>
+            <div class="card reveal reveal-up"><h3>Flask</h3></div>
+            <div class="card reveal reveal-up"><h3>Machine Learning</h3></div>
+            <div class="card reveal reveal-up"><h3>NLP</h3></div>
+            <div class="card reveal reveal-up"><h3>BERT &amp; Transformers</h3></div>
+            <div class="card reveal reveal-up"><h3>SQL</h3></div>
+            <div class="card reveal reveal-up"><h3>Git</h3></div>
+            <div class="card reveal reveal-up"><h3>GitHub</h3></div>
+            <div class="card reveal reveal-up"><h3>VS Code</h3></div>
+        </div>
+    </section>
+
+    <section id="education" class="education">
+        <h2 class="reveal reveal-up">Education</h2>
+        <div class="timeline">
+            <div class="timeline-item reveal reveal-up">
+                <h3 class="docs-toggle-title" onclick="toggleDocs('mca-docs', this)">Master of Computer Application (MCA) <span class="toggle-icon">▾</span></h3>
+                <p class="meta">Pursuing — SVKM's IoT College, Dhule, DBATU University, Lonere</p>
+                <div class="docs-list" id="mca-docs">
+                    <button class="btn cert-view-btn" onclick="openCertModal('images/MCA Sem - I_1.jpg')">Semester 1 Marksheet</button>
+                    <button class="btn cert-view-btn" onclick="openCertModal('images/Mca sem II.jpeg')">Semester 2 Marksheet</button>
+                </div>
+            </div>
+            <div class="timeline-item reveal reveal-up">
+                <h3 class="docs-toggle-title" onclick="toggleDocs('bsc-docs', this)">Bachelor of Science (BCS) <span class="toggle-icon">▾</span></h3>
+                <p class="meta">06/2021 – 04/2024 · SSVPS Science College, Dhule, KBC NMU Jalgaon</p>
+                <p class="meta">CGPA: 8.42/70.26% &nbsp;|&nbsp; Grade: A+</p>
+                <div class="docs-list" id="bsc-docs">
+                    <button class="btn cert-view-btn" onclick="openCertModal('images/FY BSC_1.jpg')">First Year Marksheet</button>
+                    <button class="btn cert-view-btn" onclick="openCertModal('images/SY BSC_1.jpg')">Second Year Marksheet</button>
+                    <button class="btn cert-view-btn" onclick="openCertModal('images/TY BSC_1.jpg')">Third Year Marksheet</button>
+                    <button class="btn cert-view-btn" onclick="openCertModal('images/Graduation Degree Certificate_1.jpg')">Degree Certificate</button>
+                </div>
+            </div>
+            <div class="timeline-item reveal reveal-up">
+                <h3 class="docs-toggle-title" onclick="toggleDocs('hsc-docs', this)">Higher Secondary School (HSC) <span class="toggle-icon">▾</span></h3>
+                <p class="meta">06/2020 – 03/2021 · S.T.T.K. Mahajan High School &amp; Jr. College, Dhule</p>
+                <p class="meta">Percentage: 74.83% &nbsp;|&nbsp; Grade: I</p>
+                <div class="docs-list" id="hsc-docs">
+                    <button class="btn cert-view-btn" onclick="openCertModal('images/HSC Marksheet_1.jpg')">HSC Marksheet</button>
+                    <button class="btn cert-view-btn" onclick="openCertModal('images/HSC Certificate _1.jpg')">HSC Certificate</button>
+                </div>
+            </div>
+            <div class="timeline-item reveal reveal-up">
+                <h3 class="docs-toggle-title" onclick="toggleDocs('ssc-docs', this)">Secondary School (SSC) <span class="toggle-icon">▾</span></h3>
+                <p class="meta">06/2018 – 03/2019 · S.T.T.K. Mahajan High School, Dhule</p>
+                <p class="meta">Percentage: 69.80% &nbsp;|&nbsp; Grade: I</p>
+                <div class="docs-list" id="ssc-docs">
+                    <button class="btn cert-view-btn" onclick="openCertModal('images/SSC Marksheet_1.jpg')">SSC Marksheet</button>
+                    <button class="btn cert-view-btn" onclick="openCertModal('images/SSC Certificate_1.jpg')">SSC Certificate</button>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="reveal reveal-up sub-heading">Certifications</h2>
+        <div class="cert-list">
+            <div class="cert-card reveal reveal-up">
+                <h3>Python Full Stack Development</h3>
+                <p>JASON · 12/2023</p>
+                <button class="btn cert-view-btn" onclick="openCertModal('images/JSON Python Full Stack Develpment_page-0001.jpg')">View Certificate</button>
+            </div>
+            <div class="cert-card reveal reveal-up">
+                <h3>DevOps</h3>
+                <p>EXCELR · Certificate of Participation</p>
+                <button class="btn cert-view-btn" onclick="openCertModal('images/EXCELR Devops Decode_page-0001.jpg')">View Certificate</button>
+            </div>
+            <div class="cert-card reveal reveal-up">
+                <h3>Artificial Intelligence</h3>
+                <p>Infosys Springboard · Course Completion</p>
+                <button class="btn cert-view-btn" onclick="openCertModal('images/Infosys Artificial Intelligence_page-0001.jpg')">View Certificate</button>
+            </div>
+            <div class="cert-card reveal reveal-up">
+                <h3>UI/UX Design</h3>
+                <p>Great Learning · Certificate of Completion</p>
+                <button class="btn cert-view-btn" onclick="openCertModal('images/Great Learning UI-UX_page-0001.jpg')">View Certificate</button>
+            </div>
+            <div class="cert-card reveal reveal-up">
+                <h3>Python for Machine Learning</h3>
+                <p>Great Learning · Certificate of Completion</p>
+                <button class="btn cert-view-btn" onclick="openCertModal('images/Great Learning Python for ML_page-0001.jpg')">View Certificate</button>
+            </div>
+            <div class="cert-card reveal reveal-up">
+                <h3>Generative AI and Agentic AI</h3>
+                <p>EXCELR · Certificate of Participation</p>
+                <button class="btn cert-view-btn" onclick="openCertModal('images/EXCELR Gen AI and Agentic AI_page-0001.jpg')">View Certificate</button>
+            </div>
+        </div>
+
+        <!-- Certificate preview modal -->
+        <div class="cert-modal" id="certModal">
+            <span class="cert-modal-close" onclick="closeCertModal()">&times;</span>
+            <img id="certModalImg" src="" alt="Certificate preview">
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2 class="reveal reveal-up">My Projects</h2>
+        <div class="project-container">
+            <div class="project-card reveal reveal-up">
+                <div class="project-thumb">
+                    <img src="images/EmoDetect_UI.png" alt="EmoDetect — Depression Detection System screenshot" loading="lazy">
+                </div>
+                <h3>EmoDetect — Depression Detection System</h3>
+                <p>
+                    An AI-powered web application that detects depression-related
+                    patterns from text using a BERT-based transformer model for NLP
+                    classification. Integrated SHAP for explainable predictions, and
+                    built a Flask REST API with a responsive frontend for real-time
+                    analysis and confidence scoring.
+                </p>
+                <a href="https://harshadadesale22.github.io/EmoDetect-Depression-Detection-System/Frontend/index.html"
+                   target="_blank" class="btn">View on GitHub</a>
+            </div>
+
+            <div class="project-card reveal reveal-up" style="transition-delay:.1s">
+                <div class="project-thumb">
+                    <img src="images/Portfolio_UI.png" alt="Personal Portfolio website screenshot" loading="lazy">
+                </div>
+                <h3>Personal Portfolio</h3>
+                <p>A fully responsive personal portfolio website built from scratch using HTML, CSS, and JavaScript. Features a dark/light theme toggle, smooth scroll-reveal animations, a typing-effect hero section, an interactive education timeline with downloadable certificates, and a clean, mixed-gradient design language across every section.</p>
+                <a href="https://harshadadesale22.github.io/CODSOFT_WEBDEV1/" target="_blank" class="btn">View on GitHub</a>
+            </div>
+
+            <div class="project-card reveal reveal-up" style="transition-delay:.2s">
+                <div class="project-thumb">
+                    <img src="images/project-landingpage.jpg" alt="Landing Page project screenshot" loading="lazy">
+                </div>
+                <h3>Landing Page</h3>
+                <p>Modern, fully responsive landing page created using HTML and CSS.</p>
+            </div>
+
+            <div class="project-card reveal reveal-up" style="transition-delay:.3s">
+                <div class="project-thumb">
+                    <img src="images/project-calculator.jpg" alt="Calculator project screenshot" loading="lazy">
+                </div>
+                <h3>Calculator</h3>
+                <p>Basic calculator built using HTML, CSS, and JavaScript with live event handling.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2 class="reveal reveal-up">Contact Me</h2>
+        <p class="contact-sub reveal reveal-up">Feel free to reach out — I'd love to hear from you.</p>
+        <div class="contact-info reveal reveal-up">
+            <p><strong>Name:</strong> Harshada Desale</p>
+            <p><strong>Location:</strong> Dhule, Maharashtra, India</p>
+        </div>
+        <div class="social-links reveal reveal-up">
+            <a href="mailto:harshadad.jdesale@gmail.com" class="social-icon" title="Email">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M2 4h20v16H2V4zm2 2v.01L12 13l8-6.99V6H4zm16 2.24-7.4 6.48a1 1 0 0 1-1.2 0L4 8.24V18h16V8.24z"/></svg>
+            </a>
+            <a href="tel:+918767703051" class="social-icon" title="Phone">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1.1-.24 11.4 11.4 0 0 0 3.6.58 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .58 3.6 1 1 0 0 1-.25 1.1L6.6 10.8z"/></svg>
+            </a>
+            <a href="https://github.com/harshadadesale22" target="_blank" class="social-icon" title="GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.38 7.86 10.9.58.1.79-.25.79-.56 0-.27-.01-1.16-.02-2.11-3.2.7-3.87-1.36-3.87-1.36-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.71.08-.71 1.17.08 1.78 1.2 1.78 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.56-.29-5.26-1.28-5.26-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.81 1.18 1.84 1.18 3.1 0 4.43-2.7 5.41-5.27 5.7.42.36.78 1.07.78 2.17 0 1.56-.02 2.83-.02 3.22 0 .31.21.67.8.56A10.52 10.52 0 0 0 23.5 12c0-6.35-5.15-11.5-11.5-11.5z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/harshadadesale22" target="_blank" class="social-icon" title="LinkedIn">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.15 1.45-2.15 2.94v5.67H9.33V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.48v6.26zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+            </a>
+        </div>
+    </section>  
+
+    <button id="backToTop" title="Back to top">↑</button>
+
+    <footer>
+        <p>&copy; 2026 Harshada Desale. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
